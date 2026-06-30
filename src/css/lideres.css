@@ -1,0 +1,234 @@
+body{
+    background-color: #1e3a5f;
+}
+.hero {
+    min-height: 85vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5),
+            rgba(0, 0, 0, .5)),
+        url("../assets/images/lideres1.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-overlay {
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+   ESTILOS DA PÁGINA DOS LÍDERES
+   ========================================== */
+
+/* Configuração geral das secções para centralizar o conteúdo */
+.lideranca-intro, 
+.citacao-profeta, 
+.propositos-conferencia, 
+.responsabilidades-lideres {
+    padding: 30px 20px;
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+/* Centraliza o título e o parágrafo APENAS na introdução */
+.lideranca-intro {
+    text-align: center; 
+}
+
+/* Correção de cores e tamanho: Textos brilhantes no fundo azul */
+.lideranca-intro h2.titulo-padrao {
+    color: #8dc63f; 
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+.lideranca-intro p.paragrafo-padrao,
+.propositos-conferencia p.paragrafo-padrao {
+    color: #ffffff; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Subtítulos das secções (H3) */
+.subtitulo-lideres {
+    font-size: 1.5rem;
+    color: #8dc63f; 
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   CITAÇÃO DO PROFETA
+   ========================================== */
+.citacao-profeta blockquote {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-left: 6px solid #8dc63f; 
+    padding: 25px 30px;
+    margin: 0;
+    border-radius: 0 12px 12px 0;
+    font-style: italic;
+}
+
+.citacao-profeta blockquote p {
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================
+   LISTA DE PROPÓSITOS (Traço verde: ">")
+   ========================================== */
+.propositos-conferencia ul {
+    list-style: none; 
+    padding: 0;
+    margin-top: 25px;
+}
+
+.propositos-conferencia li {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+/* A setinha verde padrão antes de cada item */
+.propositos-conferencia li::before {
+    content: ">"; 
+    color: #8dc63f; 
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   CARDS DE RESPONSABILIDADES
+   ========================================== */
+.card-responsabilidade {
+    background-color: #ffffff; 
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); 
+    border-left: 8px solid #8dc63f; 
+    transition: transform 0.3s ease; 
+}
+
+/* Efeito ao passar o rato/mouse no card */
+.card-responsabilidade:hover {
+    transform: translateY(-5px); 
+}
+
+.card-responsabilidade h4 {
+    color: #1e3a5f; 
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-responsabilidade p {
+    color: #333333;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* ==========================================
+   RESPONSIVO (MOBILE)
+   ========================================== */
+@media (max-width: 600px) {
+    * { outline: none; }
+
+    .hero {
+        min-height: 70vh;
+        padding: 0 10px;
+    }
+
+    .hero-overlay {
+        padding: 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .lideranca-intro,
+    .citacao-profeta,
+    .propositos-conferencia,
+    .responsabilidades-lideres {
+        padding: 25px 16px;
+    }
+
+    .lideranca-intro h2.titulo-padrao {
+        font-size: 2rem;
+    }
+
+    .subtitulo-lideres {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+
+    .lideranca-intro p.paragrafo-padrao,
+    .propositos-conferencia p.paragrafo-padrao {
+        font-size: 1.02rem;
+        line-height: 1.7;
+    }
+
+    .citacao-profeta blockquote {
+        padding: 18px 18px;
+    }
+
+    .citacao-profeta blockquote p {
+        font-size: 1.02rem;
+    }
+
+    .propositos-conferencia li {
+        font-size: 1.0rem;
+        padding-left: 28px;
+    }
+
+    .propositos-conferencia li::before {
+        font-size: 1.1rem;
+    }
+
+    .card-responsabilidade {
+        padding: 22px 18px;
+    }
+
+    .card-responsabilidade h4 {
+        font-size: 1.15rem;
+    }
+
+    .card-responsabilidade p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+}

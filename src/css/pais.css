@@ -1,0 +1,134 @@
+body{
+   background-color: #1e3a5f;
+}
+.hero {
+    min-height: 85vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5),
+            rgba(0, 0, 0, .5)),
+        url("../assets/images/pais1.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-overlay {
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+   ESTILO DA SEÇÃO: FORTALECENDO LAÇOS
+   ========================================== */
+
+.titulo-padrao {
+    font-size: 2rem;
+    color: #8dc63f;
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.fortalecendo-lacos {
+    padding: 60px 20px;
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+/* Corrigir as cores dos textos para brilharem no fundo escuro */
+.fortalecendo-lacos p.paragrafo-padrao {
+    color: #ffffff; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo da lista (removendo as bolinhas padrão) */
+.fortalecendo-lacos ul {
+    list-style: none; 
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Estilo de cada item da lista */
+.fortalecendo-lacos li {
+    color: #ffffff; 
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 30px; 
+    line-height: 1.6;
+}
+
+/*  criar a setinha verde antes de cada frase! */
+.fortalecendo-lacos li::before {
+    content: ">";
+    color: #8dc63f;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   RESPONSIVO (MOBILE)
+   ========================================== */
+@media (max-width: 600px) {
+    * { outline: none; }
+
+    .hero {
+        min-height: 70vh;
+        padding: 0 10px;
+    }
+
+    .hero-overlay {
+        padding: 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .fortalecendo-lacos {
+        padding: 45px 16px;
+    }
+
+    .titulo-padrao {
+        font-size: 1.35rem;
+        letter-spacing: 2px;
+    }
+
+    .fortalecendo-lacos p.paragrafo-padrao {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .fortalecendo-lacos li {
+        font-size: 1.0rem;
+        padding-left: 28px;
+    }
+
+    .fortalecendo-lacos li::before {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+}

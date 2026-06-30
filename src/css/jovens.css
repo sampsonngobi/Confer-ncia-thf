@@ -1,0 +1,339 @@
+/* ==========================================
+   1. ESTILO DA SEÇÃO HERO (TOPO DA PÁGINA)
+   ========================================== */
+body {
+    background-color: #1e3a5f;
+}
+
+/* ==========================================
+   1. ESTILO GERAL
+   ========================================== */
+.jovens-hero {
+    min-height: 85vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../assets/images/jovens1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.jovens-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.jovens-hero h2 {
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+   2. ESTILO GERAL DAS SEÇÃO EXPERIENCIAS 
+   ========================================== */
+.experiencias {
+    padding: 80px 0;
+}
+
+.container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.experiencias h1 {
+    font-size: 4rem;
+    color: #8dc63f;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    line-height: 1;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+
+.experiencias ul {
+    font-size: 1.2rem;
+    list-style: none; 
+    padding: 0;
+}
+
+.experiencias li {
+    color: white;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.experiencias li::before {
+    content: ">";
+    color: #8dc63f; 
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.bloco {
+    margin-top: 70px;
+}
+
+/* ==========================================
+   2. ESTILO GERAL DAS SEÇÕES (ESPAÇAMENTO E TÍTULOS)
+   ========================================== */
+.titulo-padrao {
+    font-size: 2rem;
+    color: #8dc63f;
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.oficinas, .cronograma, .inscricao {
+    padding: 40px 20px;
+    max-width: 800px;          
+    margin: 0 auto;            
+}
+
+.paragrafo-padrao {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   3. ESTILO DA LISTA DE OFICINAS
+   ========================================== */
+.oficinas ul {
+    list-style: none;      
+    padding: 0;
+}
+
+.oficinas li {
+    background-color: hsl(220, 23%, 95%); 
+    margin-bottom: 12px;       
+    padding: 15px;             
+    border-left: 4px solid #3182ce; 
+    border-radius: 4px;      
+}
+
+/* ==========================================
+   4. Roteiro de Atividades
+   ========================================== */
+table {
+    width: 100%;               
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.15); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+th, td {
+    padding: 15px 20px;        
+    text-align: left;          
+}
+
+/* Estilo do Cabeçalho */
+th {
+    background-color: #8dc63f; 
+    color: #1e3a5f;     
+    font-size: 1.1rem;
+}
+
+/* Estilo das Linhas (Textos) */
+td {
+    color: #ffffff; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+/* Efeito ao passar o mouse (Hover) */
+tr:hover td {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+/* ==========================================
+   5. ESTILO DA SEÇÃO DE INSCRIÇÃO (CTA)
+   ========================================== */
+.inscricao {
+    text-align: center;        
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    padding: 50px 30px; 
+    margin-top: 60px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    border-top: 5px solid #8dc63f; 
+}
+
+/* Garante que o texto de apoio fique escuro para ler bem no fundo branco */
+.inscricao p {
+    color: #333333; 
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.texto-secao {
+    font-size: 2.2rem;
+    color: #8dc63f;
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ==========================================
+   ESTILO DO BOTÃO DE INSCRIÇÃO
+   ========================================== */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #d4af37, #b5952f); 
+    color: #1e3a5f; 
+    padding: 15px 35px;
+    border-radius: 30px; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); 
+    transition: all 0.3s ease; 
+}
+
+/* Efeito quando o mouse passa por cima do botão */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+    background: linear-gradient(135deg, #e3c153, #c5a337);
+}
+
+/* ==========================================
+   RESPONSIVO (MOBILE)
+   ========================================== */
+@media (max-width: 600px) {
+    * { outline: none; }
+
+    .jovens-hero {
+        min-height: 70vh;
+        padding: 0 10px;
+    }
+
+    .hero-overlay {
+        padding: 1.35rem;
+    }
+
+    .jovens-hero h1 {
+        font-size: 2.45rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .jovens-hero h2 {
+        font-size: 1.35rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .experiencias {
+        padding: 50px 0;
+    }
+
+    .experiencias h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+        line-height: 1.1;
+    }
+
+    .paragrafo-padrao {
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+    .titulo-padrao {
+        font-size: 1.35rem;
+        letter-spacing: 2px;
+    }
+
+    .inscricao {
+        padding: 35px 18px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .inscricao p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .texto-secao {
+        font-size: 1.6rem;
+    }
+
+    /* Tabela (Cronograma) empilhada */
+    .cronograma table,
+    .cronograma thead,
+    .cronograma tbody,
+    .cronograma th,
+    .cronograma td,
+    .cronograma tr {
+        display: block;
+        width: 100%;
+    }
+
+    .cronograma thead {
+        display: none;
+    }
+
+    .cronograma tr {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .cronograma td {
+        padding: 10px 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: left;
+    }
+
+    .cronograma td:last-child {
+        border-bottom: none;
+    }
+
+    .cronograma td::before {
+        display: inline-block;
+        width: 42%;
+        font-weight: bold;
+        color: #8dc63f;
+        content: attr(data-label);
+    }
+
+    .cronograma td {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .jovens-hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .cronograma td::before {
+        width: 48%;
+    }
+}
