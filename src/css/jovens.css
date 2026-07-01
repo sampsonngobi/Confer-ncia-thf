@@ -2,7 +2,7 @@
    1. ESTILO DA SEÇÃO HERO (TOPO DA PÁGINA)
    ========================================== */
 body {
-    background-color: #1e3a5f;
+    background-color: #87b153;
 }
 
 /* ==========================================
@@ -12,7 +12,7 @@ body {
     min-height: 85vh;
     background-image:
         linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-        url("../assets/images/jovens1.jpg");
+        url("/src/assets/images/jovens-hero.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -35,6 +35,8 @@ body {
 
 .jovens-hero h2 {
     margin-bottom: 1rem;
+    color: #d4af37;
+    font-size: 4rem;
 }
 
 /* ==========================================
@@ -52,7 +54,7 @@ body {
 
 .experiencias h1 {
     font-size: 4rem;
-    color: #8dc63f;
+    color: #ffffff;
     margin-left: 80px;
     margin-bottom: 40px;
     line-height: 1;
@@ -89,7 +91,7 @@ body {
    ========================================== */
 .titulo-padrao {
     font-size: 2rem;
-    color: #8dc63f;
+    color: #ffffff;
     text-transform: uppercase; 
     letter-spacing: 4px;
     margin-bottom: 20px;
@@ -107,6 +109,98 @@ body {
     color: white;
     line-height: 1.8;
     margin-bottom: 20px;
+}
+
+.app-links {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background-image:
+        linear-gradient(140deg, rgba(10, 27, 24, 0.82), rgba(19, 47, 34, 0.72)),
+        url("/src/assets/images/apps-image.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.app-links::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+    pointer-events: none;
+}
+
+.app-links .paragrafo-padrao {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto 20px;
+}
+
+.app-links .titulo-padrao {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    border-radius: 18px;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.08));
+    border-color: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
+}
+
+.app-card:focus-visible {
+    outline: 3px solid #d4af37;
+    outline-offset: 3px;
+}
+
+.app-card img {
+    width: 100%;
+    max-width: 190px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: #ffffff;
+}
+
+.app-card span {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* ==========================================
@@ -184,7 +278,7 @@ tr:hover td {
 
 .texto-secao {
     font-size: 2.2rem;
-    color: #8dc63f;
+    color: #ffffff;
     text-transform: uppercase; 
     letter-spacing: 4px;
     margin-bottom: 15px;
@@ -197,17 +291,15 @@ tr:hover td {
    ========================================== */
 .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #d4af37, #b5952f); 
-    color: #1e3a5f; 
-    padding: 15px 35px;
-    border-radius: 30px; 
-    font-size: 1.1rem;
+    background: #d4af37;
+    color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    font-size: 2rem;
     font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none; 
-    letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); 
-    transition: all 0.3s ease; 
+    width: 300px;
+    height: 100px;
+    max-width: 100%;
 }
 
 /* Efeito quando o mouse passa por cima do botão */
@@ -265,7 +357,26 @@ tr:hover td {
 
     .titulo-padrao {
         font-size: 1.35rem;
+        color: #ffffff;
         letter-spacing: 2px;
+    }
+
+    .app-links {
+        padding: 32px 16px;
+        border-radius: 18px;
+    }
+
+    .app-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .app-card {
+        padding: 14px;
+    }
+
+    .app-card span {
+        font-size: 0.95rem;
     }
 
     .inscricao {
@@ -281,6 +392,7 @@ tr:hover td {
 
     .texto-secao {
         font-size: 1.6rem;
+        color: #ffffff;
     }
 
     /* Tabela (Cronograma) empilhada */
