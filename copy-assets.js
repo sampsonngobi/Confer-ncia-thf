@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 const srcDir = './src/assets/images'
-const destDir = './dist/assets'
+const destDir = './dist/src/assets/images'
 
 // Ensure destination directory exists
 if (!fs.existsSync(destDir)) {
@@ -15,7 +15,7 @@ files.forEach(file => {
     const src = path.join(srcDir, file)
     const dest = path.join(destDir, file)
     fs.copyFileSync(src, dest)
-    console.log(`Copied ${file} to dist/assets/`)
+    console.log(`Copied ${file} to dist/src/assets/images/`)
 })
 
-console.log(`\n✓ All assets copied to dist/assets`)
+console.log(`\n✓ All assets copied to dist/src/assets/images/`)
