@@ -246,6 +246,7 @@
     height: 170px;
     object-fit: contain;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .highlight p {
